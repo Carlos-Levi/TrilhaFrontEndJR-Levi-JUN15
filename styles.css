@@ -15,6 +15,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: top 0.3s ease; /* Adiciona transição suave para o efeito de ocultar */
 }
 
 header nav a {
@@ -87,3 +88,7 @@ li {
     margin-bottom: 10px;
 }
 
+/* Estilo para esconder o cabeçalho ao rolar para baixo */
+header.hidden {
+    top: -100px; /* Mova o cabeçalho para fora da tela */
+}
